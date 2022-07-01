@@ -1,6 +1,7 @@
 body{
     color:green;
 }
+<<<<<<< HEAD
 p{
     font-style: italic;
 }
@@ -19,3 +20,33 @@ td{
 #precio{
     text-decoration: line-through;
 }
+=======
+td > p{
+    font-style: italic;
+}
+td > p::first-letter {
+    font-weight: bolder;
+}
+td{
+    width: 200px;
+    border-style: solid;
+    text-align: center;
+}
+tr:nth-child(odd)
+{
+    background-color: chartreuse;
+}
+tr:nth-child(even)
+{
+    background-color: purple;
+}
+td:hover{
+    background-color: blue;
+}
+#precio{
+    text-decoration: line-through;
+}
+.productos td img{
+    width: 100px;
+}
+>>>>>>> a4ab6b5f781360bf1c8d8d98ef817cf1bdb62e88
