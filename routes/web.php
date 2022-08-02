@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\PrincipalController;
 use Illuminate\Support\Facades\Route;
+use App\Models\Producto;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,7 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('principal');
+Route::get('/',[PrincipalController::class, "inicio"]);
+
+Route::get('/prueba', function () {
+    return Producto::masNuevos();
 });
 
