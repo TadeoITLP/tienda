@@ -15,6 +15,6 @@ class CategoriasSeeder extends Seeder
     public function run()
     {
         //
-        Categoria::factory()-> count (500)->create(); //crea 500 producto en la BD
+        Categoria::factory()->count(500)->create(); //crea 500 producto en la BD
     }
 }
