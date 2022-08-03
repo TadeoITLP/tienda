@@ -14,6 +14,7 @@ class PrincipalController extends Controller
 {
     public function inicio()
     {
+        //$usuarios = Session:: get("cliente");
         $productos = Producto::masNuevos();
         //$productosMasVendidos = Producto::masVendidos();
         //return $productos;
