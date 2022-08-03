@@ -15,7 +15,6 @@ use App\Models\Producto;
 |
 */
 
-/*ESTE ES EL ARCHVO DE INICIO Y DEBE DE CONTENER LAS RUTAS DISPONIBLE  */
 Route::get('/',[PrincipalController::class, "inicio"]);
 
 Route::get('/prueba', function () {
