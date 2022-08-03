@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePedidosDetallesTable extends Migration
+class CreateComentariosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,10 @@ class CreatePedidosDetallesTable extends Migration
      */
     public function up()
     {
-        Schema::create('pedidos_detalles', function (Blueprint $table) {
+        Schema::create('comentarios', function (Blueprint $table) {
             $table->id();
-            $table->integer("pedido_id");
-            $table->integer("producto_id");
-            $table->integer("cantidad");
-            $table->double("descuento");
-            $table->double("precio_unitario");
+            $table->text("comentario");
+            $table->unsignedBigInteger("productos_id");
             $table->timestamps();
         });
     }
@@ -31,6 +28,6 @@ class CreatePedidosDetallesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pedidos_detalles');
+        Schema::dropIfExists('comentarios');
     }
 }
