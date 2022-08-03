@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilos.css">
     <title>Document</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
         </ul>
     </nav>
     <section id="banner">
-        <img src="banner_default.png"/>
+        <img src="/img/banner_default.png"/>
     </section>
     <section id="oferas">
         <img src="oferta1.jgp"/>
@@ -25,7 +26,8 @@
     <section id="productosNuevos">
         @foreach ($productosNuevos as $producto)
             <article>
-                <img src="{{$producto->foto}}"/><br>
+                <!--<img src="{{$producto->foto}}"/><br>-->
+                <img src="img\galleta_animalitos.jpg"><br>
                 <p>{{$producto->nombre}}<br>
                 $ {{$producto->precio}}</p>
             </article>

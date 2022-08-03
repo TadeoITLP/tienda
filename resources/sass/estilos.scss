@@ -1,0 +1,26 @@
+@import 'w3';
+header{
+    @extend .w3-container;
+    @extend .w3-panel;
+    @extend .w3-blue;
+    @extend .w3-center;
+}
+#banner img{
+    @extend .w3-panel;
+}
+#productosNuevos {
+    article{
+        @extend .w3-quarter;
+        @extend .w3-center;
+        img{
+            height: 100px;
+            width: 150px;
+        }
+        p{
+
+        }
+    }
+
+}
+
+
