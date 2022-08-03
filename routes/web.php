@@ -3,6 +3,7 @@
 use App\Http\Controllers\PrincipalController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Producto;
+use Illuminate\Support\Facades\Session;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +27,7 @@ Route::post('/altaProductos/guardar',[PrincipalController::class, "guardarProduc
 ->middleware("autentificado");
 
 Route::get('/login/formulario', function () {
+    Session::flush();
     return view("login");
 });
 
