@@ -26,6 +26,7 @@ Route::post('/altaProductos/guardar',[PrincipalController::class, "guardarProduc
 ->middleware("autentificado");
 
 Route::get('/login/formulario', function () {
+    Session::flush();
     return view("login");
 });
 

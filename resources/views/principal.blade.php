@@ -10,7 +10,10 @@
 </head>
 <body>
     <header>
-        <h1>Tienda TEC</h1>
+        <h1>Tienda TEC</h1><br>
+        @if ($usuario)
+            Bienvenido: {{$usuario->nombre}}
+        @endif
     </header>
     <nav>
         <ul>
