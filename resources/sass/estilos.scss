@@ -10,10 +10,17 @@ header{
 }
 #productosNuevos {
     article{
-     @extend .w3-quarter;
+        @extend .w3-quarter;
+        @extend .w3-center;
+        img{
+            height: 100px;
+            width: 150px;
+        }
+        p{
+
+        }
     }
-    img {
-        height:100px;
-        width:50px;
-    }
+
 }
+
+
