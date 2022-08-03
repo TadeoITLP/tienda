@@ -5,5 +5,22 @@ header{
     @extend .w3-blue;
     @extend .w3-center;
 }
+<<<<<<< HEAD
+=======
+#banner img{
+    @extend .w3-panel;
+}
+#productosNuevos {
+    article{
+        @extend .w3-quarter;
+        @extend .w3-center;
+        img{
+            height: 100px;
+            width: 150px;
+        }}
+    }
+
+}
+>>>>>>> d6f5c48f51ddf0791d66a0e42f5c4bb99048b092
 
 
