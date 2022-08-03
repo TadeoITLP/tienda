@@ -17,10 +17,11 @@ class CreatePedidosTable extends Migration
             $table->id();
             $table->dateTime("fecha_pedido");
             $table->dateTime("fecha_entrega");
-            $table->integer("id_cliente");
-            $table->bigInteger("numero_pedido");
+            $table->unsignedBigInteger("cliente_id");
             $table->string("observaciones",200);
             $table->timestamps();
+
+            $table->foreign('cliente_id')->references('id')->on('clientes');
         });
     }
 

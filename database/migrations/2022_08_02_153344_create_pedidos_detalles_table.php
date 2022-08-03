@@ -15,12 +15,16 @@ class CreatePedidosDetallesTable extends Migration
     {
         Schema::create('pedidos_detalles', function (Blueprint $table) {
             $table->id();
-            $table->integer("pedido_id");
-            $table->integer("producto_id");
+            $table->unsignedBigInteger("pedido_id");
+            $table->unsignedBigInteger("producto_id");
             $table->integer("cantidad");
             $table->double("descuento");
             $table->double("precio_unitario");
             $table->timestamps();
+
+            $table->foreign('pedido_id')->references('id')->on('pedidos');
+            $table->foreign('producto_id')->references('id')->on('productos');
+
         });
     }
 
