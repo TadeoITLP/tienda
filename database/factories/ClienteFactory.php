@@ -16,7 +16,9 @@ class ClienteFactory extends Factory
         return [
             'nombre' => $this->faker->name(),
             'direccion' => $this->faker->text(),
-            'telefono' => $this->faker->phoneNumber()
+            'telefono' => $this->faker->phoneNumber(),
+            'correo' => $this->faker->email(),
+            'password' => bcrypt("123")
         ];
     }
 }

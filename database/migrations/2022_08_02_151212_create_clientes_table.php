@@ -18,6 +18,8 @@ class CreateClientesTable extends Migration
             $table->string('nombre',100)->unique();
             $table->text('direccion')->nullable();
             $table->string('telefono',20)->nullable();
+            $table->string('correo');
+            $table->string('password');
             $table->timestamps();
         });
     }

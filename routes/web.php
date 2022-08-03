@@ -16,9 +16,18 @@ use App\Models\Producto;
 */
 
 /*ESTE ES EL ARCHVO DE INICIO Y DEBE DE CONTENER LAS RUTAS DISPONIBLE  */
-Route::get('/',[PrincipalController::class, "inicio"]);
+Route::get('/',[PrincipalController::class, "inicio"])->name("inicio");
 
-Route::get('/prueba', function () {
-    return Producto::masNuevos();
+Route::get('/altaProductos/formulario',function(){
+    return view("altaProductos");
+})->middleware("autentificado");
+
+Route::post('/altaProductos/guardar',[PrincipalController::class, "guardarProducto"])
+->middleware("autentificado");
+
+Route::get('/login/formulario', function () {
+    return view("login");
 });
+
+Route::post('/login/entrar',[PrincipalController::class, "login"]);
 
