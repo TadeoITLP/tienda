@@ -3,9 +3,9 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\Categoria;
+use App\Models\Pedidos;
 
-class CategoriasSeeder extends Seeder
+class PedidosSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,6 +15,6 @@ class CategoriasSeeder extends Seeder
     public function run()
     {
         //
-        Categoria::factory()->count(500)->create(); //crea 500 producto en la BD
+        Pedidos::factory()->count(500)->create();
     }
 }
