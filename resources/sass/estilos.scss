@@ -1,0 +1,9 @@
+@import 'w3';
+header{
+    @extend .w3-container;
+    @extend .w3-panel;
+    @extend .w3-blue;
+    @extend .w3-center;
+}
+
+
