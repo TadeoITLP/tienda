@@ -18,3 +18,8 @@ class Producto extends Model
         return $productos;
     }
 }
+public static function masVendidos(){
+
+
+}
+public static function porCategoria()
