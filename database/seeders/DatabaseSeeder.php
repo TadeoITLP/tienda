@@ -17,7 +17,9 @@ class DatabaseSeeder extends Seeder
                     CategoriasSeeder::class,
                     ClientesSeeder::class,
                     PromocionsSeeder::class,
-                    ProveedorsSeeder::class]);
+                    ProveedorsSeeder::class,
+                PedidosSeeder::class,
+            PedidosDetallesSeeder::class]);
 
     }
 }
