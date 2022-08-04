@@ -5,19 +5,22 @@ namespace Tests\Feature;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 use App\Models\Cliente;
+use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 class ExampleTest extends TestCase
 {
+
+    use DatabaseTransactions;
     /**
      * A basic test example.
      *
      * @return void
      */
-    public function test_principal()
+    /*public function test_principal()
     {
         $response = $this->get('/');
         $response->assertStatus(200);
-    }
+    }*/
 
     public function test_alta_productos_formulario()
     {

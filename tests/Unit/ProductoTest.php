@@ -4,9 +4,11 @@ namespace Tests\Unit;
 
 use Tests\TestCase;
 use App\Models\Producto;
+use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 class ProductoTest extends TestCase
 {
+    use DatabaseTransactions;
     /**
      * A basic unit test example.
      *
@@ -20,7 +22,8 @@ class ProductoTest extends TestCase
 
     public function test_masVendidos()
     {
-        $this->assertTrue(true);
+        $productos = Producto::masVendidos();
+        $this->assertTrue($productos->count()<=4);
     }
 
     public function test_porCategoria()

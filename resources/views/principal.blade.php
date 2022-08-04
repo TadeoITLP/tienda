@@ -27,8 +27,8 @@
     <section id="oferas">
         <img src="oferta1.jgp"/>
     </section>
-    <section id="productosNuevos">
-        @foreach ($productosNuevos as $producto)
+    <section id="ProductosMasNuevos">
+        @foreach ($productosMasNuevos as $producto)
             <article>
                 <!--<img src="{{$producto->foto}}"/><br>-->
                 <img src="img\galleta_animalitos.jpg"><br>
@@ -37,7 +37,7 @@
             </article>
         @endforeach
     </section>
-    <section id="masVendidos">
+    <section id="ProductosMasVendidos">
         @foreach ($productosMasVendidos as $producto)
             <article>
                 <!--<img src="{{$producto->foto}}"/><br>-->
@@ -47,8 +47,8 @@
             </article>
         @endforeach
     </section>
-    <section id="productosCategoria">
-        @foreach ($productosCategoria as $producto)
+    <section id="ProductosPorCategoria">
+        @foreach ($productosPorCategoria as $producto)
             <article>
                 <!--<img src="{{$producto->foto}}"/><br>-->
                 <img src="img\galleta_animalitos.jpg"><br>

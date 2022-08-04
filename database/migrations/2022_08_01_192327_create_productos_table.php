@@ -20,7 +20,10 @@ class CreateProductosTable extends Migration
             $table->double("precio");
             $table->integer("cantidad")->default(0);
             $table->string("foto")->default("default.jpg");
+            $table->unsignedBigInteger("categoria_id");
             $table->timestamps();
+
+            $table->foreign('categoria_id')->references('id')->on('categorias');
         });
     }
 
