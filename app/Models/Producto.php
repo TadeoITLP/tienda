@@ -17,6 +17,16 @@ class Producto extends Model
         $productos = $consulta->get();
         return $productos;
     }
+
+    public static function masVendidos()
+    {
+
+    }
+
+    public static function porCategoria()
+    {
+
+    }
 }
 public static function masVendidos(){
 
