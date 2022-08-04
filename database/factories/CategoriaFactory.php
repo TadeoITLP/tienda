@@ -15,8 +15,8 @@ class CategoriaFactory extends Factory
     {
         return [
             //
-            "nombreCat"=>$this->faker->name(20),
-            "descripcionCat"=>$this->faker->text(),
+            "nombre"=>$this->faker->name(20),
+            "descripcion"=>$this->faker->text(),
         ];
     }
 }

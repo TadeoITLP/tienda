@@ -16,8 +16,7 @@ class PedidoFactory extends Factory
         return [
             "fecha_pedido" => $this->faker->dateTimeInInterval('-1 month','+20 days','America/Mazatlan'),
             "fecha_entrega" => $this->faker->dateTimeInInterval('-1 week','+7 day','America/Mazatlan'),
-            "id_cliente" => $this->faker->numberBetween(1,500),
-            "numero_pedido" => $this->faker->unique()->numberBetween(1,9999),
+            "cliente_id" => $this->faker->numberBetween(1,500),
             "observaciones" => $this->faker->text(200),
             //
             /**

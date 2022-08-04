@@ -14,10 +14,16 @@ class PrincipalController extends Controller
 {
     public function inicio()
     {
-        $productos = Producto::masNuevos();
+        $usuario = Session::get("cliente");
+        $masNuevos = Producto::masNuevos();
+        $masVendidos = Producto::masVendidos();
+        $porCategoria  =  Producto::porCategoria();
         //$productosMasVendidos = Producto::masVendidos();
         //return $productos;
-        return view("principal",["productosNuevos"=>$productos]);
+        return view("principal",["productosMasNuevos"=>$masNuevos,
+                                 "productosMasVendidos"=>$masVendidos,
+                                 "productosPorCategoria"=>$porCategoria,
+                                    "usuario"=>$usuario]);
                                 //*,"productosMasVendidos"=>$productosMasVendidos]);
     }
 
