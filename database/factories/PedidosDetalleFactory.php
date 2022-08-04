@@ -4,7 +4,7 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class PedidoDetalleFactory extends Factory
+class PedidosDetalleFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -15,7 +15,7 @@ class PedidoDetalleFactory extends Factory
     {
         return [
             //
-            "pedido_id" => $this->faker->unique()->numberBetween(1,9999),
+            "pedido_id" => $this->faker->numberBetween(1,9999),
             "producto_id" => $this->faker->numberBetween(1,9999),
             "cantidad" => $this->faker->numberBetween(1,100),
             "descuento" => $this->faker->randomFloat(2,0.00,90.00),

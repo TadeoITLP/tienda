@@ -1,5 +1,5 @@
 @import 'w3';
-header{
+header, footer{
     @extend .w3-container;
     @extend .w3-panel;
     @extend .w3-blue;
@@ -8,7 +8,11 @@ header{
 #banner img{
     @extend .w3-panel;
 }
-#productosNuevos {
+section{
+    @extend .w3-container;
+    @extend .w3-panel;
+}
+#ProductosMasNuevos, #ProductosMasVendidos, #ProductosPorCategoria {
     article{
         @extend .w3-quarter;
         @extend .w3-center;
@@ -18,5 +22,3 @@ header{
         }
     }
 }
-
-

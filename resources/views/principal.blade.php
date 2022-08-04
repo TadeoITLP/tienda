@@ -24,8 +24,8 @@
     <section id="oferas">
         <img src="oferta1.jgp"/>
     </section>
-    <section id="productosNuevos">
-        @foreach ($productosNuevos as $producto)
+    <section id="ProductosMasNuevos">
+        @foreach ($productosMasNuevos as $producto)
             <article>
                 <img src="{{$producto->foto}}"/><br>
                 <p>{{$producto->nombre}}<br>
@@ -33,49 +33,25 @@
             </article>
         @endforeach
     </section>
-    <section id="masVendidos">
-        <article>
-            <img src="producto1.jpg"/><br>
-            <p>Producto 1<br>
-            $ 1,000.00</p>
-        </article>
-        <article>
-            <img src="producto1.jpg"/><br>
-            <p>Producto 2<br>
-            $ 1,000.00</p>
-        </article>
-        <article>
-            <img src="producto1.jpg"/><br>
-            <p>Producto 3<br>
-            $ 1,000.00</p>
-        </article>
-        <article>
-            <img src="producto1.jpg"/><br>
-            <p>Producto 4<br>
-            $ 1,000.00</p>
-        </article>
+    <section id="ProductosMasVendidos">
+        @foreach ($productosMasVendidos as $producto)
+            <article>
+                <!--<img src="{{$producto->foto}}"/><br>-->
+                <img src="img\galleta_animalitos.jpg"><br>
+                <p>{{$producto->nombre}}<br>
+                $ {{$producto->precio}}</p>
+            </article>
+        @endforeach
     </section>
-    <section id="productosCategoria">
-        <article>
-            <img src="producto1.jpg"/><br>
-            <p>Producto 1<br>
-            $ 1,000.00</p>
-        </article>
-        <article>
-            <img src="producto1.jpg"/><br>
-            <p>Producto 2<br>
-            $ 1,000.00</p>
-        </article>
-        <article>
-            <img src="producto1.jpg"/><br>
-            <p>Producto 3<br>
-            $ 1,000.00</p>
-        </article>
-        <article>
-            <img src="producto1.jpg"/><br>
-            <p>Producto 4<br>
-            $ 1,000.00</p>
-        </article>
+    <section id="ProductosPorCategoria">
+        @foreach ($productosPorCategoria as $producto)
+            <article>
+                <!--<img src="{{$producto->foto}}"/><br>-->
+                <img src="img\galleta_animalitos.jpg"><br>
+                <p>{{$producto->nombre}}<br>
+                $ {{$producto->precio}}</p>
+            </article>
+        @endforeach
     </section>
     <footer>
         <p>Direccion: Blvd. Forjadores de BCS. 4720 Macro Aula<br>
