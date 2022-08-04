@@ -12,7 +12,7 @@ section{
     @extend .w3-container;
     @extend .w3-panel;
 }
-#productosNuevos, #productosMasVendidos, #productosCategoria {
+#ProductosMasNuevos, #ProductosMasVendidos, #ProductosPorCategoria {
     article{
         @extend .w3-quarter;
         @extend .w3-center;
